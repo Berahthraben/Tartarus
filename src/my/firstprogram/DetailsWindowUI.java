@@ -36,6 +36,8 @@ public class DetailsWindowUI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         DETAILS_TEXT = new javax.swing.JTextArea();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         DETAILS_TEXT.setColumns(10);
         DETAILS_TEXT.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         DETAILS_TEXT.setLineWrap(true);
