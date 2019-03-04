@@ -23,6 +23,8 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 - Customers list | All the previous customers you have attended. Includes a dropdown box with usernames + Self-opening window!
 - Credits button | A quick link to this repository and my personal DeviantArt page! Be sure to watch!
 
+# Regular users
+Just head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release. Run the program from your desktop/assigned folder and you're good to go! Magic!
 Warning: Requires JAVA 8+ installed. https://www.java.com/en/download/
 
 
