@@ -59,6 +59,7 @@ Want to compile to code yourself to be safe? No problem! Here's what you need:
 - Customer editor -> Still need to implement the UI. For the time being, navigate to your program folder and edit "logs.txt" if you need anything changed.
 - Sorting methods for Usernames Alphabetically/Completed or Ongoing Commissions/Dates
 - A better way to store important links (Including Social Media/Methods of Contact usernames)
+- Dark/Eye sparing Themes
 
 # Credits
 
