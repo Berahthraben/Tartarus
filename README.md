@@ -27,11 +27,13 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 Got interested? Want to download the software? Follow the steps below:
 *Warning: Requires JAVA 8+ installed. https://www.java.com/en/download/*
 
-1. Head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release. 
+1. Head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release.; 
 
-2.Run the program from your desktop/assigned folder and you're good to go! Magic!
+2. Run the program from your desktop/assigned folder and you're good to go! Magic!;
 
 
 # Advanced Users
-Want to compile to code yourself to be safe? No problem! Clone the repository through your favorite platform (usually Git)
-
+Want to compile to code yourself to be safe? No problem! Here's what you need:
+<p align="center">**ECLIPSE USERS**</p>
+1. Clone the repository through your favorite platform (usually Git);
+2. Load up the Classes in your favorite IDE (Eclipse is supported, though Netbeans is prefered
