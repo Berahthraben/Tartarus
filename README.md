@@ -36,4 +36,5 @@ Got interested? Want to download the software? Follow the steps below:
 Want to compile to code yourself to be safe? No problem! Here's what you need:
 <p align="center">**ECLIPSE USERS**</p>
 1. Clone the repository through your favorite platform (usually Git);
+
 2. Load up the Classes in your favorite IDE (Eclipse is supported, though Netbeans is prefered
