@@ -64,5 +64,7 @@ Want to compile to code yourself to be safe? No problem! Here's what you need:
 # Credits
 
 Thanks to the entire community of StackOverflow for keeping my head wrapped around a bitchy language like Java.
+
 Original Program implementation / Idea -> Soerakraven / Berahthraben / Nicolas D. Ribeiro
+
 Contributors: N/D
