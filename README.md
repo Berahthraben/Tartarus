@@ -6,7 +6,7 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 <img aligning = center src="https://github.com/Berahthraben/Tartarus/blob/master/readmeAssets/Tartarus1.PNG">
 
 
-#Features
+# Features
 - Compact, lightweight UI;
 - File Storing system | Creates a logs.txt in the program folder for storing! Take it anywhere you go!
 - Organized methods for storing any relevant information regarding your commission! Includes:
