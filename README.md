@@ -27,14 +27,41 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 Got interested? Want to download the software? Follow the steps below:
 *Warning: Requires JAVA 8+ installed. https://www.java.com/en/download/*
 
-1. Head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release.; 
+1. Head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release. 
 
-2. Run the program from your desktop/assigned folder and you're good to go! Magic!;
+2. Run the program from your desktop/assigned folder and you're good to go! Magic!
 
 
 # Advanced Users
 Want to compile to code yourself to be safe? No problem! Here's what you need:
 <p align="center">**ECLIPSE USERS**</p>
-1. Clone the repository through your favorite platform (usually Git);
 
-2. Load up the Classes in your favorite IDE (Eclipse is supported, though Netbeans is prefered
+1. Clone the repository through your favorite platform (usually Git is the best).
+
+2. Create a new project, include the cloned repository and the sources.
+
+3. Build the project and you're good to go!
+
+<p align="center">**NETBEANS USERS**</p>
+
+1. Clone the repository through your favorite platform (usually Git is the best).
+
+2. In NetBeans, select File > Open Project > ... And navigate to the repository you just downloaded
+
+3. Everything should load up automatically, since it was originally intended for NetBeans. If it doesn't create a new project called "Tartarus", name the source-package as "my.firstprogram" and set the main class to "PrincipalUI.java"
+
+4. Select Run > Clean and Build project
+
+5. A folder called "dist" will be created inside the repository. Open it and run "Tartarus.jar"
+
+# Upcoming features
+
+- Customer editor -> Still need to implement the UI. For the time being, navigate to your program folder and edit "logs.txt" if you need anything changed.
+- Sorting methods for Usernames Alphabetically/Completed or Ongoing Commissions/Dates
+- A better way to store important links (Including Social Media/Methods of Contact usernames)
+
+# Credits
+
+Thanks to the entire community of StackOverflow for keeping my head wrapped around a bitchy language like Java.
+Original Program implementation / Idea -> Soerakraven / Berahthraben / Nicolas D. Ribeiro
+Contributors: N/D
