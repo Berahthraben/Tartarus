@@ -24,7 +24,12 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 - Credits button | A quick link to this repository and my personal DeviantArt page! Be sure to watch!
 
 # Regular users
-Just head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release. Run the program from your desktop/assigned folder and you're good to go! Magic!
-Warning: Requires JAVA 8+ installed. https://www.java.com/en/download/
+Got interested? Want to download the software? Follow the steps below:
+*Warning: Requires JAVA 8+ installed. https://www.java.com/en/download/*
+<center>1. Head down to the releases page (https://github.com/Berahthraben/Tartarus/releases) and download the latest release.</center> 
+<center>Run the program from your desktop/assigned folder and you're good to go! Magic! </center>
 
+
+# Advanced Users
+Want to compile to code yourself to be safe? No problem! Clone the repository through your favorite platform (usually Git)
 
