@@ -7,6 +7,7 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 
 
 # Features
+- COMPLETELY OPEN-SOURCE AND FREE TO USE!!
 - Compact, lightweight UI;
 - File Storing system | Creates a logs.txt in the program folder for storing! Take it anywhere you go!
 - Organized methods for storing any relevant information regarding your commission! Includes:
