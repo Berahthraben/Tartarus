@@ -87,7 +87,7 @@ public class CreditsUI extends javax.swing.JFrame {
     private void GITHUB_BUTTONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GITHUB_BUTTONActionPerformed
         try{
             if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-                Desktop.getDesktop().browse(new URI("https://github.com/Berahthraben/Tartarusmy"));
+                Desktop.getDesktop().browse(new URI("https://github.com/Berahthraben/Tartarus"));
             }
         }catch (Exception e){
             e.printStackTrace();

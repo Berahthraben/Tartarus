@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/DetailsWindowUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/ShowUserUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/PrincipalUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/ShowUserDetailsUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/CreditsUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/firstprogram/ComboBoxUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/PrincipalUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/CreditsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/DetailsWindowUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/Customer.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ComboBoxUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ShowUserDetailsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ShowUserUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ManageList.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ArchiveClient.java</file>
         </group>
     </open-files>
 </project-private>
