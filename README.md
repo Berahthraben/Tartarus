@@ -49,7 +49,7 @@ Want to compile to code yourself to be safe? No problem! Here's what you need:
 
 2. In NetBeans, select File > Open Project > ... And navigate to the repository you just downloaded
 
-3. Everything should load up automatically, since it was originally intended for NetBeans. If it doesn't create a new project called "Tartarus", name the source-package as "my.firstprogram" and set the main class to "PrincipalUI.java"
+3. Everything should load up automatically, since it was originally intended for NetBeans. If it doesn't create a new project called "Tartarus", name the source-package as "my.tartarus" and set the main class to "PrincipalUI.java"
 
 4. Select Run > Clean and Build project
 
