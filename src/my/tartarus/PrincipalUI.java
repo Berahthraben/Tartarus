@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.firstprogram;
+package my.tartarus;
     import java.io.*;
     import java.util.*;
     import java.lang.*;
@@ -542,12 +542,13 @@ public class PrincipalUI extends javax.swing.JFrame {
         for(int i=0;i<MOC.length;i++){
             System.out.printf("%s\n", MOC[i]);
         }
-        entradas [3] = DATE_OF_COMMISSION_DAY.getSelectedItem().toString() + "/" + DATE_OF_COMMISSION_MONTH.getSelectedItem().toString() + "/" + DATE_OF_COMMISSION_YEAR.getSelectedItem().toString();
-        entradas [4] = DATE_OF_PAYMENT_DAY.getSelectedItem().toString() + "/" + DATE_OF_PAYMENT_MONTH.getSelectedItem().toString() + "/" + DATE_OF_PAYMENT_YEAR.getSelectedItem().toString();
-        entradas [5] = INVOICE_NUMBER_NUMBER.getText();
-        entradas [6] = PRICE_CHARGED_CURRENCY.getSelectedItem().toString();
-        entradas [7] = PRICE_CHARGED_AMMOUNT.getText();
-        entradas [8] = novo.GetText();
+        entradas[3] = DATE_OF_COMMISSION_DAY.getSelectedItem().toString() + "/" + DATE_OF_COMMISSION_MONTH.getSelectedItem().toString() + "/" + DATE_OF_COMMISSION_YEAR.getSelectedItem().toString();
+        System.out.printf("%s", entradas[3]);
+        entradas[4] = DATE_OF_PAYMENT_DAY.getSelectedItem().toString() + "/" + DATE_OF_PAYMENT_MONTH.getSelectedItem().toString() + "/" + DATE_OF_PAYMENT_YEAR.getSelectedItem().toString();
+        entradas[5] = INVOICE_NUMBER_NUMBER.getText();
+        entradas[6] = PRICE_CHARGED_CURRENCY.getSelectedItem().toString();
+        entradas[7] = PRICE_CHARGED_AMMOUNT.getText();
+        entradas[8] = novo.GetText();
         System.out.printf("I'mhere!\n");
         Customer cus = new Customer(entradas[0], MOC, entradas[2], entradas[3], entradas[4], entradas[5], entradas[6], entradas[7], entradas[8]);
         ManageList.AddCustomer(cus);

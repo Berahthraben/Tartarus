@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.firstprogram;
+package my.tartarus;
 
 /**
  *
@@ -11,23 +11,27 @@ package my.firstprogram;
  */
 public class ShowUserUI extends javax.swing.JFrame {
     public static int index;
+    public static ShowUserDetailsUI SU2 = new ShowUserDetailsUI();
     /**
      * Creates new form ShowUserUI
      */
     public ShowUserUI() {
         initComponents();
     }
-    public void SetText(Customer cus, int indeqs){
+    public static ShowUserDetailsUI GetSU2(){
+        return SU2;
+        
+    }
+    public void SetText(Customer cus, int indeqs, String date){
         index = indeqs;
         this.jTextArea1.append("Username: " + cus.GetUsername() + "\n");
         this.jTextArea1.append("Methods of contact: [");
-        System.out.printf("MOC lenght: %d", cus.GetMOC().length);
         for(int i=0;i<cus.GetMOC().length;i++){
             this.jTextArea1.append(cus.GetMOC()[i] +", ");
         }
         this.jTextArea1.append("]\n");
         this.jTextArea1.append("Previous Commissioner: " + cus.GetPreviousCommissioner() + "\n");
-        this.jTextArea1.append("Date Of Commission: " + cus.GetDateOfCommission() + "\n");
+        this.jTextArea1.append("Date Of Commission: " + date + "\n");
         this.jTextArea1.append("Date Of Payment: " + cus.GetDateOfPayment() + "\n");
         this.jTextArea1.append("Invoice Number: " + cus.GetNumberInvoice() + "\n");
         this.jTextArea1.append("Price Charged: " + cus.GetPriceChargedCurrency() + " ");
@@ -96,7 +100,6 @@ public class ShowUserUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ShowUserDetailsUI SU2 = new ShowUserDetailsUI();
         SU2.setVisible(true);
         Customer temp = new Customer();
         temp = ManageList.ReturnsCustomer(index);

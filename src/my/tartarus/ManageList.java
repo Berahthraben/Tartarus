@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.firstprogram;
+package my.tartarus;
 
 import java.util.*;
 import java.lang.*;
-import my.firstprogram.Customer;
-import my.firstprogram.PrincipalUI;
-import my.firstprogram.ComboBoxUI;
+import my.tartarus.Customer;
+import my.tartarus.PrincipalUI;
+import my.tartarus.ComboBoxUI;
 /**
  *
  * @author Soerakraven
@@ -40,6 +40,20 @@ public class ManageList {
             }else{
                 temp = temp + ent.charAt(i);
             }
+        }
+        return temp;
+    }
+    public static String ReturnsComboBoxDate(String ent){
+        String temp = "";
+        int posi=0;
+        for(int i=0;i<ent.length();i++){
+            if(ent.charAt(i)==' '){
+                posi = i;
+                break;
+            }
+        }
+        for(int i=posi;i<ent.length();i++){
+            temp = temp + ent.charAt(i);
         }
         return temp;
     }
