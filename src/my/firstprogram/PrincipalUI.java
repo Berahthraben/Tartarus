@@ -31,7 +31,6 @@ public class PrincipalUI extends javax.swing.JFrame {
      */
     public PrincipalUI () {
         ArchiveClient.CreateFile();
-        System.out.printf("Loading Data...\n");
         ArchiveClient.LoadData();
         initComponents();
     }

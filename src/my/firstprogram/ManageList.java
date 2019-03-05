@@ -22,7 +22,37 @@ public class ManageList {
     public static void AddCustomer(Customer cust){
         cuzt.add(cust);
     }
+    public static String[] ReturnsComboBoxString(){
+        String[] Ids = new String[cuzt.size()];
+        Customer tempo = new Customer();
+        for(int i=0;i<cuzt.size();i++){
+            tempo = cuzt.get(i);
+            Ids[i] = tempo.GetUsername() + " " + tempo.GetDateOfCommission();
+        }
+        return Ids;
+        
+    }
+    public static String ReturnsComboBoxUsername(String ent){
+        String temp = "";
+        for(int i=0;i<ent.length();i++){
+            if(ent.charAt(i)==' '){
+                break;
+            }else{
+                temp = temp + ent.charAt(i);
+            }
+        }
+        return temp;
+    }
     public static String[] ReturnIds(){ //returns the names of all customers in the list
+        String[] Ids = new String[cuzt.size()];
+        Customer tempo = new Customer();
+        for(int i=0;i<cuzt.size();i++){
+            tempo = cuzt.get(i);
+            Ids[i] = tempo.GetDateOfCommission();
+        }
+        return Ids;
+    }
+    public static String[] ReturnDates(){ //returns the dates of commission of all customers in list
         String[] Ids = new String[cuzt.size()];
         Customer tempo = new Customer();
         for(int i=0;i<cuzt.size();i++){

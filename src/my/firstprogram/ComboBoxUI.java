@@ -37,7 +37,7 @@ public class ComboBoxUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(my.firstprogram.ManageList.ReturnIds()));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(my.firstprogram.ManageList.ReturnsComboBoxString()));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -91,7 +91,7 @@ public class ComboBoxUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int index;
-        index = ManageList.SearchCustomerName(jComboBox1.getSelectedItem().toString());
+        index = ManageList.SearchCustomerName(ManageList.ReturnsComboBoxUsername(jComboBox1.getSelectedItem().toString()));
         Customer cuz = new Customer();
         cuz = ManageList.ReturnsCustomer(index);
         ShowUserUI SU = new ShowUserUI();
