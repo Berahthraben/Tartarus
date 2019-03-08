@@ -4,6 +4,7 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 
 
 <img aligning = center src="https://github.com/Berahthraben/Tartarus/blob/master/readmeAssets/Tartarus1.PNG">
+<img aligning = center src="https://github.com/Berahthraben/Tartarus/blob/master/readmeAssets/Tartarus2.PNG">
 
 
 # Features
