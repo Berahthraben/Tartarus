@@ -77,7 +77,7 @@ Want to compile to code yourself to be safe? No problem! Here's what you need:
 
 # Upcoming features
 
-- Customer editor - ✔
+- Entry editor - ✔
 - Sorting methods for Usernames Alphabetically/Completed or Ongoing Commissions/Dates - X
 - A better way to store important links (Including Social Media/Methods of Contact usernames) - X
 - Dark/Eye sparing Themes - X
