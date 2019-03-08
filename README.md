@@ -1,6 +1,6 @@
 # Tartarus
 
-Application for storing/keeping track of Art commissions | Completely Open-source | Written in JAVA
+Application for storing/keeping track of/Planning Art Commissions | Completely Open-source | Written in JAVA
 
 
 <img aligning = center src="https://github.com/Berahthraben/Tartarus/blob/master/readmeAssets/Tartarus3.PNG">
