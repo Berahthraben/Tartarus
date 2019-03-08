@@ -8,10 +8,19 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
 
 
 # Features
+|| GLOBAL FEATURES ||
+
 - COMPLETELY OPEN-SOURCE AND FREE TO USE!!
 - Compact, lightweight UI;
-- File Storing system | Creates a logs.txt in the program folder for storing! Take it anywhere you go!
-- Organized methods for storing any relevant information regarding your commission! Includes:
+- File Storing system | Creates a txt file for both artists and commissioners in the program folder for storing! Take it anywhere you go!
+- Clear Button | Want to start anew? Just press this and everything wipes itself out!
+- Edit button | Commission changed? Price was a little different? No problem! With this 2.0 feature you can now edit the content of an entry you've previously added.
+- Trivia/Tips | Shows a number of funny references and some program tips. Not made by Gnomes!
+- Credits Button | Direct link to this github repository and to my personal DeviantArt. Be sure to share a watch! :D
+
+|| ARTIST FEATURES ||
+
+- Organized methods for storing any relevant information regarding your commission request! Includes:
   - Commissioner Username | Find him anywhere through a basic text!
   - Methods of contact | Currently supports the most famous ways, but has a "other" option so you type a custom one!
   - Previous Commissioner? | Remember, remember that picture you did in november? Yes do!
@@ -21,9 +30,19 @@ Application for storing/keeping track of Art commissions | Completely Open-sourc
   - Price Charged Currency/Ammount | Includes all the Currency Codes and a typable box!
   - Written details | Never forget any details you have regarding the commission. Includes a button to make it stay on top!
   - Commission complete? | Mark down the commissions you have completed, so you don't have to select them anymore!
-- Clear Button | Want to start anew? Just press this and everything wipes itself out!
 - Customers list | All the previous customers you have attended. Includes a dropdown box with usernames + Self-opening window!
-- Credits button | A quick link to this repository and my personal DeviantArt page! Be sure to watch!
+
+|| COMMISSIONER FEATURES ||
+
+- Organized methods for storing any relevant information regarding your commission request! Includes:
+  - Commission Title | Unique to each user. Helps you find yourself in the middle of one-too-many entries!
+  - Artist Username | The artist you intend to commission
+  - Methods of Contact | Artist uses telegram? Discord? Maybe another messaging platform that nobody ever heard of before? All's included here!
+  - Character details | Includes quantity of characters, space for names, type (Headshot, halfbody, fullbody) and a Lewd-intention radio buttons. Wooo ( ͡° ͜ʖ ͡°)
+  - Pricing | Estimate price, paid price and the platform used!
+  - Background | Do you intend to commission a background? What type? All's included for easy tracking!
+  - Written details | Write everything relevant you couldn't fit anywhere else in here!
+- Commissions list | Organized dropdown box that shows all the entries you've added. Never forget anything!
 
 # Regular users
 Got interested? Want to download the software? Follow the steps below:
@@ -58,10 +77,10 @@ Want to compile to code yourself to be safe? No problem! Here's what you need:
 
 # Upcoming features
 
-- Customer editor -> Still need to implement the UI. For the time being, navigate to your program folder and edit "logs.txt" if you need anything changed.
-- Sorting methods for Usernames Alphabetically/Completed or Ongoing Commissions/Dates
-- A better way to store important links (Including Social Media/Methods of Contact usernames)
-- Dark/Eye sparing Themes
+- Customer editor - ✔
+- Sorting methods for Usernames Alphabetically/Completed or Ongoing Commissions/Dates - X
+- A better way to store important links (Including Social Media/Methods of Contact usernames) - X
+- Dark/Eye sparing Themes - X
 
 # Credits
 
@@ -69,4 +88,4 @@ Thanks to the entire community of StackOverflow for keeping my head wrapped arou
 
 Original Program implementation / Idea -> Soerakraven / Berahthraben / Nicolas D. Ribeiro
 
-Contributors: N/D
+Contributors: CarrieSoftPaws (FA), YellowTheArtist (Twitter)
