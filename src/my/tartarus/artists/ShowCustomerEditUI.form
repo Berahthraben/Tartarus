@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="PREVIOUS_COMISSIONER_BUTTON_GROUP">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="COMMISSION_COMPLETE_BUTTON_GROUP">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="ARTIST_USERNAME_PANEL" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ARTIST_MOC_PANEL" alignment="1" max="32767" attributes="0"/>
+                  <Component id="ARTIST_PREVIOUS_PANEL" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ARTIST_DATE_PANEL" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="ARTIST_COMPLETION_PANEL" alignment="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="ARTIST_DETAILS_PANEL" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ARTIST_PAYMENT_PANEL" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="ARTIST_USERNAME_PANEL" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="ARTIST_MOC_PANEL" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="ARTIST_PREVIOUS_PANEL" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="ARTIST_DATE_PANEL" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="ARTIST_PAYMENT_PANEL" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ARTIST_DETAILS_PANEL" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ARTIST_COMPLETION_PANEL" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="ARTIST_USERNAME_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Username">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="USERNAME" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="USERNAME_TEXT" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="USERNAME" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="USERNAME_TEXT" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="USERNAME">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Commissioner Username"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="USERNAME_TEXT">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="71" green="71" red="71" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="selectedTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="USERNAME_TEXTActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_MOC_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Contact">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="METHOD_OF_CONTACT" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="METHOD_OF_CONTACT_DISCORD" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="METHOD_OF_CONTACT_TELEGRAM" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="METHOD_OF_CONTACT_OTHER" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="METHOD_OF_CONTACT_FA" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="METHOD_OF_CONTACT_DA" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="METHOD_OF_CONTACT_OTHER_TEXT" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="METHOD_OF_CONTACT" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="METHOD_OF_CONTACT_DISCORD" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="METHOD_OF_CONTACT_TELEGRAM" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="METHOD_OF_CONTACT_OTHER" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="METHOD_OF_CONTACT_FA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="METHOD_OF_CONTACT_DA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="METHOD_OF_CONTACT_OTHER_TEXT" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="METHOD_OF_CONTACT">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Method of contact"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="METHOD_OF_CONTACT_DISCORD">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Discord"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="METHOD_OF_CONTACT_DISCORDActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="METHOD_OF_CONTACT_TELEGRAM">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Telegram"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="METHOD_OF_CONTACT_FA">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="FurAffinity"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="METHOD_OF_CONTACT_DA">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Deviantart"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="METHOD_OF_CONTACT_OTHER">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Other"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="METHOD_OF_CONTACT_OTHERActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="METHOD_OF_CONTACT_OTHER_TEXT">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="METHOD_OF_CONTACT_OTHER_TEXTActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_PREVIOUS_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Previous">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="PREVIOUS_COMMISSIONER" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="PREVIOUS_COMMISSIONER_YES" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="PREVIOUS_COMMISSIONER_NO" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                  <Component id="PREVIOUS_COMMISSIONER" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="PREVIOUS_COMMISSIONER_YES" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="PREVIOUS_COMMISSIONER_NO" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="PREVIOUS_COMMISSIONER">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Previous Customer?"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="PREVIOUS_COMMISSIONER_YES">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="PREVIOUS_COMISSIONER_BUTTON_GROUP"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Yes"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PREVIOUS_COMMISSIONER_YESActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="PREVIOUS_COMMISSIONER_NO">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="PREVIOUS_COMISSIONER_BUTTON_GROUP"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="No"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PREVIOUS_COMMISSIONER_NOActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_DATE_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Date of closure">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="DATE_OF_COMMISSION" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_DAY" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="BARRINHA1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_MONTH" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="BARRINHA2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_YEAR" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="41" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                  <Component id="DATE_OF_COMMISSION" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_DAY" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_MONTH" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_COMMISSION_YEAR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BARRINHA1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BARRINHA2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="DATE_OF_COMMISSION">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Date of Commission"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_COMMISSION_DAY">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="31">
+                <StringItem index="0" value="1"/>
+                <StringItem index="1" value="2"/>
+                <StringItem index="2" value="3"/>
+                <StringItem index="3" value="4"/>
+                <StringItem index="4" value="5"/>
+                <StringItem index="5" value="6"/>
+                <StringItem index="6" value="7"/>
+                <StringItem index="7" value="8"/>
+                <StringItem index="8" value="9"/>
+                <StringItem index="9" value="10"/>
+                <StringItem index="10" value="11"/>
+                <StringItem index="11" value="12"/>
+                <StringItem index="12" value="13"/>
+                <StringItem index="13" value="14"/>
+                <StringItem index="14" value="15"/>
+                <StringItem index="15" value="16"/>
+                <StringItem index="16" value="17"/>
+                <StringItem index="17" value="18"/>
+                <StringItem index="18" value="19"/>
+                <StringItem index="19" value="20"/>
+                <StringItem index="20" value="21"/>
+                <StringItem index="21" value="22"/>
+                <StringItem index="22" value="23"/>
+                <StringItem index="23" value="24"/>
+                <StringItem index="24" value="25"/>
+                <StringItem index="25" value="26"/>
+                <StringItem index="26" value="27"/>
+                <StringItem index="27" value="28"/>
+                <StringItem index="28" value="29"/>
+                <StringItem index="29" value="30"/>
+                <StringItem index="30" value="31"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="BARRINHA1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="/"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_COMMISSION_MONTH">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="12">
+                <StringItem index="0" value="1"/>
+                <StringItem index="1" value="2"/>
+                <StringItem index="2" value="3"/>
+                <StringItem index="3" value="4"/>
+                <StringItem index="4" value="5"/>
+                <StringItem index="5" value="6"/>
+                <StringItem index="6" value="7"/>
+                <StringItem index="7" value="8"/>
+                <StringItem index="8" value="9"/>
+                <StringItem index="9" value="10"/>
+                <StringItem index="10" value="11"/>
+                <StringItem index="11" value="12"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="BARRINHA2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="/"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_COMMISSION_YEAR">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="10">
+                <StringItem index="0" value="2019"/>
+                <StringItem index="1" value="2020"/>
+                <StringItem index="2" value="2021"/>
+                <StringItem index="3" value="2022"/>
+                <StringItem index="4" value="2023"/>
+                <StringItem index="5" value="2024"/>
+                <StringItem index="6" value="2025"/>
+                <StringItem index="7" value="2026"/>
+                <StringItem index="8" value="2027"/>
+                <StringItem index="9" value="2028"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_PAYMENT_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Payment">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="INVOICE_NUMBER" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="DATE_OF_PAYMENT" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="PRICE_CHARGED" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Component id="PRICE_CHARGED_CURRENCY" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="INVOICE_NUMBER_NUMBER" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                      <Component id="DATE_OF_PAYMENT_DAY" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PRICE_CHARGED_AMMOUNT" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="BARRINHA3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_PAYMENT_MONTH" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="BARRINHA4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="DATE_OF_PAYMENT_YEAR" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="DATE_OF_PAYMENT" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DATE_OF_PAYMENT_DAY" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DATE_OF_PAYMENT_MONTH" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DATE_OF_PAYMENT_YEAR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="BARRINHA3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="BARRINHA4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="INVOICE_NUMBER_NUMBER" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="PRICE_CHARGED_AMMOUNT" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="PRICE_CHARGED_CURRENCY" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="PRICE_CHARGED" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="INVOICE_NUMBER" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="DATE_OF_PAYMENT">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Date of Payment"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_PAYMENT_DAY">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="31">
+                <StringItem index="0" value="1"/>
+                <StringItem index="1" value="2"/>
+                <StringItem index="2" value="3"/>
+                <StringItem index="3" value="4"/>
+                <StringItem index="4" value="5"/>
+                <StringItem index="5" value="6"/>
+                <StringItem index="6" value="7"/>
+                <StringItem index="7" value="8"/>
+                <StringItem index="8" value="9"/>
+                <StringItem index="9" value="10"/>
+                <StringItem index="10" value="11"/>
+                <StringItem index="11" value="12"/>
+                <StringItem index="12" value="13"/>
+                <StringItem index="13" value="14"/>
+                <StringItem index="14" value="15"/>
+                <StringItem index="15" value="16"/>
+                <StringItem index="16" value="17"/>
+                <StringItem index="17" value="18"/>
+                <StringItem index="18" value="19"/>
+                <StringItem index="19" value="20"/>
+                <StringItem index="20" value="21"/>
+                <StringItem index="21" value="22"/>
+                <StringItem index="22" value="23"/>
+                <StringItem index="23" value="24"/>
+                <StringItem index="24" value="25"/>
+                <StringItem index="25" value="26"/>
+                <StringItem index="26" value="27"/>
+                <StringItem index="27" value="28"/>
+                <StringItem index="28" value="29"/>
+                <StringItem index="29" value="30"/>
+                <StringItem index="30" value="31"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="BARRINHA3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="/"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_PAYMENT_MONTH">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="12">
+                <StringItem index="0" value="1"/>
+                <StringItem index="1" value="2"/>
+                <StringItem index="2" value="3"/>
+                <StringItem index="3" value="4"/>
+                <StringItem index="4" value="5"/>
+                <StringItem index="5" value="6"/>
+                <StringItem index="6" value="7"/>
+                <StringItem index="7" value="8"/>
+                <StringItem index="8" value="9"/>
+                <StringItem index="9" value="10"/>
+                <StringItem index="10" value="11"/>
+                <StringItem index="11" value="12"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="BARRINHA4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="/"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="DATE_OF_PAYMENT_YEAR">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="10">
+                <StringItem index="0" value="2019"/>
+                <StringItem index="1" value="2020"/>
+                <StringItem index="2" value="2021"/>
+                <StringItem index="3" value="2022"/>
+                <StringItem index="4" value="2023"/>
+                <StringItem index="5" value="2024"/>
+                <StringItem index="6" value="2025"/>
+                <StringItem index="7" value="2026"/>
+                <StringItem index="8" value="2027"/>
+                <StringItem index="9" value="2028"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DATE_OF_PAYMENT_YEARActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="INVOICE_NUMBER">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Number of Invoice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="INVOICE_NUMBER_NUMBER">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="PRICE_CHARGED">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Price Charged"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="PRICE_CHARGED_CURRENCY">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="16" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="299">
+                <StringItem index="0" value="ADP"/>
+                <StringItem index="1" value="AED"/>
+                <StringItem index="2" value="AFA"/>
+                <StringItem index="3" value="AFN"/>
+                <StringItem index="4" value="ALK"/>
+                <StringItem index="5" value="ALL"/>
+                <StringItem index="6" value="AMD"/>
+                <StringItem index="7" value="ANG"/>
+                <StringItem index="8" value="AOA"/>
+                <StringItem index="9" value="AOK"/>
+                <StringItem index="10" value="AON"/>
+                <StringItem index="11" value="AOR"/>
+                <StringItem index="12" value="ARA"/>
+                <StringItem index="13" value="ARP"/>
+                <StringItem index="14" value="ARS"/>
+                <StringItem index="15" value="ARY"/>
+                <StringItem index="16" value="ATS"/>
+                <StringItem index="17" value="AUD"/>
+                <StringItem index="18" value="AWG"/>
+                <StringItem index="19" value="AYM"/>
+                <StringItem index="20" value="AZM"/>
+                <StringItem index="21" value="AZN"/>
+                <StringItem index="22" value="BAD"/>
+                <StringItem index="23" value="BAM"/>
+                <StringItem index="24" value="BBD"/>
+                <StringItem index="25" value="BDT"/>
+                <StringItem index="26" value="BEC"/>
+                <StringItem index="27" value="BEF"/>
+                <StringItem index="28" value="BEL"/>
+                <StringItem index="29" value="BGJ"/>
+                <StringItem index="30" value="BGK"/>
+                <StringItem index="31" value="BGL"/>
+                <StringItem index="32" value="BGN"/>
+                <StringItem index="33" value="BHD"/>
+                <StringItem index="34" value="BIF"/>
+                <StringItem index="35" value="BMD"/>
+                <StringItem index="36" value="BND"/>
+                <StringItem index="37" value="BOB"/>
+                <StringItem index="38" value="BOP"/>
+                <StringItem index="39" value="BOV"/>
+                <StringItem index="40" value="BRB"/>
+                <StringItem index="41" value="BRC"/>
+                <StringItem index="42" value="BRE"/>
+                <StringItem index="43" value="BRL"/>
+                <StringItem index="44" value="BRN"/>
+                <StringItem index="45" value="BRR"/>
+                <StringItem index="46" value="BSD"/>
+                <StringItem index="47" value="BTN"/>
+                <StringItem index="48" value="BUK"/>
+                <StringItem index="49" value="BWP"/>
+                <StringItem index="50" value="BYB"/>
+                <StringItem index="51" value="BYN"/>
+                <StringItem index="52" value="BYR"/>
+                <StringItem index="53" value="BZD"/>
+                <StringItem index="54" value="CAD"/>
+                <StringItem index="55" value="CDF"/>
+                <StringItem index="56" value="CHC"/>
+                <StringItem index="57" value="CHE"/>
+                <StringItem index="58" value="CHF"/>
+                <StringItem index="59" value="CHW"/>
+                <StringItem index="60" value="CLF"/>
+                <StringItem index="61" value="CLP"/>
+                <StringItem index="62" value="CNX"/>
+                <StringItem index="63" value="CNY"/>
+                <StringItem index="64" value="COP"/>
+                <StringItem index="65" value="COU"/>
+                <StringItem index="66" value="CRC"/>
+                <StringItem index="67" value="CSD"/>
+                <StringItem index="68" value="CSJ"/>
+                <StringItem index="69" value="CSK"/>
+                <StringItem index="70" value="CUC"/>
+                <StringItem index="71" value="CUP"/>
+                <StringItem index="72" value="CVE"/>
+                <StringItem index="73" value="CYP"/>
+                <StringItem index="74" value="CZK"/>
+                <StringItem index="75" value="DDM"/>
+                <StringItem index="76" value="DEM"/>
+                <StringItem index="77" value="DJF"/>
+                <StringItem index="78" value="DKK"/>
+                <StringItem index="79" value="DOP"/>
+                <StringItem index="80" value="DZD"/>
+                <StringItem index="81" value="ECS"/>
+                <StringItem index="82" value="ECV"/>
+                <StringItem index="83" value="EEK"/>
+                <StringItem index="84" value="EGP"/>
+                <StringItem index="85" value="ERN"/>
+                <StringItem index="86" value="ESA"/>
+                <StringItem index="87" value="ESB"/>
+                <StringItem index="88" value="ESP"/>
+                <StringItem index="89" value="ETB"/>
+                <StringItem index="90" value="EUR"/>
+                <StringItem index="91" value="FIM"/>
+                <StringItem index="92" value="FJD"/>
+                <StringItem index="93" value="FKP"/>
+                <StringItem index="94" value="FRF"/>
+                <StringItem index="95" value="GBP"/>
+                <StringItem index="96" value="GEK"/>
+                <StringItem index="97" value="GEL"/>
+                <StringItem index="98" value="GHC"/>
+                <StringItem index="99" value="GHP"/>
+                <StringItem index="100" value="GHS"/>
+                <StringItem index="101" value="GIP"/>
+                <StringItem index="102" value="GMD"/>
+                <StringItem index="103" value="GNE"/>
+                <StringItem index="104" value="GNF"/>
+                <StringItem index="105" value="GNS"/>
+                <StringItem index="106" value="GQE"/>
+                <StringItem index="107" value="GRD"/>
+                <StringItem index="108" value="GTQ"/>
+                <StringItem index="109" value="GWE"/>
+                <StringItem index="110" value="GWP"/>
+                <StringItem index="111" value="GYD"/>
+                <StringItem index="112" value="HKD"/>
+                <StringItem index="113" value="HNL"/>
+                <StringItem index="114" value="HRD"/>
+                <StringItem index="115" value="HRK"/>
+                <StringItem index="116" value="HTG"/>
+                <StringItem index="117" value="HUF"/>
+                <StringItem index="118" value="IDR"/>
+                <StringItem index="119" value="IEP"/>
+                <StringItem index="120" value="ILP"/>
+                <StringItem index="121" value="ILR"/>
+                <StringItem index="122" value="ILS"/>
+                <StringItem index="123" value="INR"/>
+                <StringItem index="124" value="IQD"/>
+                <StringItem index="125" value="IRR"/>
+                <StringItem index="126" value="ISJ"/>
+                <StringItem index="127" value="ISK"/>
+                <StringItem index="128" value="ITL"/>
+                <StringItem index="129" value="JMD"/>
+                <StringItem index="130" value="JOD"/>
+                <StringItem index="131" value="JPY"/>
+                <StringItem index="132" value="KES"/>
+                <StringItem index="133" value="KGS"/>
+                <StringItem index="134" value="KHR"/>
+                <StringItem index="135" value="KMF"/>
+                <StringItem index="136" value="KPW"/>
+                <StringItem index="137" value="KRW"/>
+                <StringItem index="138" value="KWD"/>
+                <StringItem index="139" value="KYD"/>
+                <StringItem index="140" value="KZT"/>
+                <StringItem index="141" value="LAJ"/>
+                <StringItem index="142" value="LAK"/>
+                <StringItem index="143" value="LBP"/>
+                <StringItem index="144" value="LKR"/>
+                <StringItem index="145" value="LRD"/>
+                <StringItem index="146" value="LSL"/>
+                <StringItem index="147" value="LSM"/>
+                <StringItem index="148" value="LTL"/>
+                <StringItem index="149" value="LTT"/>
+                <StringItem index="150" value="LUC"/>
+                <StringItem index="151" value="LUF"/>
+                <StringItem index="152" value="LUL"/>
+                <StringItem index="153" value="LVL"/>
+                <StringItem index="154" value="LVR"/>
+                <StringItem index="155" value="LYD"/>
+                <StringItem index="156" value="MAD"/>
+                <StringItem index="157" value="MDL"/>
+                <StringItem index="158" value="MGA"/>
+                <StringItem index="159" value="MGF"/>
+                <StringItem index="160" value="MKD"/>
+                <StringItem index="161" value="MLF"/>
+                <StringItem index="162" value="MMK"/>
+                <StringItem index="163" value="MNT"/>
+                <StringItem index="164" value="MOP"/>
+                <StringItem index="165" value="MRO"/>
+                <StringItem index="166" value="MTL"/>
+                <StringItem index="167" value="MTP"/>
+                <StringItem index="168" value="MUR"/>
+                <StringItem index="169" value="MVQ"/>
+                <StringItem index="170" value="MVR"/>
+                <StringItem index="171" value="MWK"/>
+                <StringItem index="172" value="MXN"/>
+                <StringItem index="173" value="MXP"/>
+                <StringItem index="174" value="MXV"/>
+                <StringItem index="175" value="MYR"/>
+                <StringItem index="176" value="MZE"/>
+                <StringItem index="177" value="MZM"/>
+                <StringItem index="178" value="MZN"/>
+                <StringItem index="179" value="NAD"/>
+                <StringItem index="180" value="NGN"/>
+                <StringItem index="181" value="NIC"/>
+                <StringItem index="182" value="NIO"/>
+                <StringItem index="183" value="NLG"/>
+                <StringItem index="184" value="NOK"/>
+                <StringItem index="185" value="NPR"/>
+                <StringItem index="186" value="NZD"/>
+                <StringItem index="187" value="OMR"/>
+                <StringItem index="188" value="PAB"/>
+                <StringItem index="189" value="PEH"/>
+                <StringItem index="190" value="PEI"/>
+                <StringItem index="191" value="PEN"/>
+                <StringItem index="192" value="PES"/>
+                <StringItem index="193" value="PGK"/>
+                <StringItem index="194" value="PHP"/>
+                <StringItem index="195" value="PKR"/>
+                <StringItem index="196" value="PLN"/>
+                <StringItem index="197" value="PLZ"/>
+                <StringItem index="198" value="PTE"/>
+                <StringItem index="199" value="PYG"/>
+                <StringItem index="200" value="QAR"/>
+                <StringItem index="201" value="RHD"/>
+                <StringItem index="202" value="ROK"/>
+                <StringItem index="203" value="ROL"/>
+                <StringItem index="204" value="RON"/>
+                <StringItem index="205" value="RSD"/>
+                <StringItem index="206" value="RUB"/>
+                <StringItem index="207" value="RUR"/>
+                <StringItem index="208" value="RWF"/>
+                <StringItem index="209" value="SAR"/>
+                <StringItem index="210" value="SBD"/>
+                <StringItem index="211" value="SCR"/>
+                <StringItem index="212" value="SDD"/>
+                <StringItem index="213" value="SDG"/>
+                <StringItem index="214" value="SDP"/>
+                <StringItem index="215" value="SEK"/>
+                <StringItem index="216" value="SGD"/>
+                <StringItem index="217" value="SHP"/>
+                <StringItem index="218" value="SIT"/>
+                <StringItem index="219" value="SKK"/>
+                <StringItem index="220" value="SLL"/>
+                <StringItem index="221" value="SOS"/>
+                <StringItem index="222" value="SRD"/>
+                <StringItem index="223" value="SRG"/>
+                <StringItem index="224" value="SSP"/>
+                <StringItem index="225" value="STD"/>
+                <StringItem index="226" value="SUR"/>
+                <StringItem index="227" value="SVC"/>
+                <StringItem index="228" value="SYP"/>
+                <StringItem index="229" value="SZL"/>
+                <StringItem index="230" value="THB"/>
+                <StringItem index="231" value="TJR"/>
+                <StringItem index="232" value="TJS"/>
+                <StringItem index="233" value="TMM"/>
+                <StringItem index="234" value="TMT"/>
+                <StringItem index="235" value="TND"/>
+                <StringItem index="236" value="TOP"/>
+                <StringItem index="237" value="TPE"/>
+                <StringItem index="238" value="TRL"/>
+                <StringItem index="239" value="TRY"/>
+                <StringItem index="240" value="TTD"/>
+                <StringItem index="241" value="TWD"/>
+                <StringItem index="242" value="TZS"/>
+                <StringItem index="243" value="UAH"/>
+                <StringItem index="244" value="UAK"/>
+                <StringItem index="245" value="UGS"/>
+                <StringItem index="246" value="UGW"/>
+                <StringItem index="247" value="UGX"/>
+                <StringItem index="248" value="USD"/>
+                <StringItem index="249" value="USN"/>
+                <StringItem index="250" value="USS"/>
+                <StringItem index="251" value="UYI"/>
+                <StringItem index="252" value="UYN"/>
+                <StringItem index="253" value="UYP"/>
+                <StringItem index="254" value="UYU"/>
+                <StringItem index="255" value="UZS"/>
+                <StringItem index="256" value="VEB"/>
+                <StringItem index="257" value="VEF"/>
+                <StringItem index="258" value="VNC"/>
+                <StringItem index="259" value="VND"/>
+                <StringItem index="260" value="VUV"/>
+                <StringItem index="261" value="WST"/>
+                <StringItem index="262" value="XAF"/>
+                <StringItem index="263" value="XAG"/>
+                <StringItem index="264" value="XAU"/>
+                <StringItem index="265" value="XBA"/>
+                <StringItem index="266" value="XBB"/>
+                <StringItem index="267" value="XBC"/>
+                <StringItem index="268" value="XBD"/>
+                <StringItem index="269" value="XCD"/>
+                <StringItem index="270" value="XDR"/>
+                <StringItem index="271" value="XEU"/>
+                <StringItem index="272" value="XFO"/>
+                <StringItem index="273" value="XFU"/>
+                <StringItem index="274" value="XOF"/>
+                <StringItem index="275" value="XPD"/>
+                <StringItem index="276" value="XPF"/>
+                <StringItem index="277" value="XPT"/>
+                <StringItem index="278" value="XRE"/>
+                <StringItem index="279" value="XSU"/>
+                <StringItem index="280" value="XTS"/>
+                <StringItem index="281" value="XUA"/>
+                <StringItem index="282" value="XXX"/>
+                <StringItem index="283" value="YDD"/>
+                <StringItem index="284" value="YER"/>
+                <StringItem index="285" value="YUD"/>
+                <StringItem index="286" value="YUM"/>
+                <StringItem index="287" value="YUN"/>
+                <StringItem index="288" value="ZAL"/>
+                <StringItem index="289" value="ZAR"/>
+                <StringItem index="290" value="ZMK"/>
+                <StringItem index="291" value="ZMW"/>
+                <StringItem index="292" value="ZRN"/>
+                <StringItem index="293" value="ZRZ"/>
+                <StringItem index="294" value="ZWC"/>
+                <StringItem index="295" value="ZWD"/>
+                <StringItem index="296" value="ZWL"/>
+                <StringItem index="297" value="ZWN"/>
+                <StringItem index="298" value="ZWR"/>
+              </StringArray>
+            </Property>
+            <Property name="selectedIndex" type="int" value="248"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="PRICE_CHARGED_AMMOUNT">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_DETAILS_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Details">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="WRITTEN_DETAILS" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="OPEN_DETAILS_WINDOW_BUTTON" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                  <Component id="OPEN_DETAILS_WINDOW_BUTTON" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="WRITTEN_DETAILS" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="WRITTEN_DETAILS">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Written Details"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="OPEN_DETAILS_WINDOW_BUTTON">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Open details window"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OPEN_DETAILS_WINDOW_BUTTONActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="ARTIST_COMPLETION_PANEL">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Completion">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="COMMISSION_COMPLETE" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="COMMISSION_COMPLETE_YES" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="COMMISSION_COMPLETE_NO" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                  <Component id="COMMISSION_COMPLETE" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="COMMISSION_COMPLETE_YES" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="COMMISSION_COMPLETE_NO" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="COMMISSION_COMPLETE">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Commision complete?"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="COMMISSION_COMPLETE_YES">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="COMMISSION_COMPLETE_BUTTON_GROUP"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Yes"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="COMMISSION_COMPLETE_YESActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="COMMISSION_COMPLETE_NO">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="COMMISSION_COMPLETE_BUTTON_GROUP"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="No"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="COMMISSION_COMPLETE_NOActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="36" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="SAVE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="36" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CANCEL"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

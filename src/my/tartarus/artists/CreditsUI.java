@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus;
+package my.tartarus.artists;
     import java.awt.Desktop;
     import java.net.URI;
 
@@ -33,7 +33,8 @@ public class CreditsUI extends javax.swing.JFrame {
         GITHUB_BUTTON = new javax.swing.JButton();
         DEVIANTART_BUTTON = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jLabel1.setText("Written by Soerakraven / Nicolas D. Ribeiro");

@@ -3,29 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus.artists;
-
-import my.tartarus.artists.ShowCustomerUI;
-import java.util.Arrays;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+package my.tartarus.customers;
 
 /**
  *
  * @author Soerakraven
  */
-public class ComboBoxUI extends javax.swing.JFrame {
-    public static ShowCustomerUI SU = new ShowCustomerUI();
+public class ListCommissionsUI extends javax.swing.JFrame {
+
     /**
-     * Creates new form InputNumberUI
+     * Creates new form ListCommissionsUI
      */
-    public ComboBoxUI() {
+    public ListCommissionsUI() {
         initComponents();
     }
-    public static ShowCustomerUI ReturnsSU(){
-        return SU;
+    public javax.swing.JComboBox ReturnsComboBox(){
+        return this.jComboBox1;
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,29 +29,28 @@ public class ComboBoxUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jComboBox1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(my.tartarus.artists.ManageCustomerList.ReturnsComboBoxString()));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Select Username");
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel1.setText("Select Commission");
 
         jButton1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jButton1.setText("Show");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton1.setText("SHOW");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        jComboBox1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(my.tartarus.customers.ManageCommissionerList.ReturnsCommissionersListComboBox()));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
             }
         });
 
@@ -65,56 +58,43 @@ public class ComboBoxUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jComboBox1, 0, 192, Short.MAX_VALUE)
+                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(81, 81, 81)
+                .addGap(121, 121, 121)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-
+        // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int index;
-        index = ManageCustomerList.SearchCustomerName(ManageCustomerList.ReturnsComboBoxUsername(jComboBox1.getSelectedItem().toString()));
-        Customer cuz = new Customer();
-        cuz = ManageCustomerList.ReturnsCustomer(index);
-        SU.setVisible(true);
-        SU.SetText(cuz, index, ManageCustomerList.ReturnsComboBoxDate(jComboBox1.getSelectedItem().toString()));
-        SU.setTitle("Customer " + cuz.GetUsername());
-        //SU.SetText();
-        /*JOptionPane.showMessageDialog(new JFrame(),
-        "Username: " + bla[0] +
-        "\nMethod(s) of contact: " + lab[] + 
-        "\nIs previous commissioner: " + bla[2] +
-        "\nDate of Commission: " + bla[3] +
-        "\nDate of Commission: " + bla[4] +
-        "\nSexo: " + bla[5] +
-        "\nSexo: " + bla[6] +
-        "\nSexo: " + bla[7] +
-        "\nSexo: " + bla[8],
-        "Client ID " +index, JOptionPane.INFORMATION_MESSAGE); */
+        int index = this.jComboBox1.getSelectedIndex();
+        ListCommissionsShowUI lcsui = new ListCommissionsShowUI();
+        Commissions com = ManageCommissionerList.comms.get(index);
+        lcsui.setTitle("Commission " + com.GetCommissionTitle());
+        lcsui.setVisible(true);
+        lcsui.WriteCommission(index);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -134,21 +114,20 @@ public class ComboBoxUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ComboBoxUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListCommissionsUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ComboBoxUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListCommissionsUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ComboBoxUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListCommissionsUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ComboBoxUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListCommissionsUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ComboBoxUI().setVisible(true);
+                new ListCommissionsUI().setVisible(true);
             }
         });
     }

@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus;
+package my.tartarus.artists;
 
 import java.util.*;
 import java.lang.*;
-import my.tartarus.Customer;
-import my.tartarus.PrincipalUI;
-import my.tartarus.ComboBoxUI;
+import my.tartarus.artists.Customer;
+import my.tartarus.artists.MainUI;
+import my.tartarus.artists.ComboBoxUI;
 /**
  *
  * @author Soerakraven
  */
-public class ManageList {
-    private static ArrayList<Customer> cuzt;
+public class ManageCustomerList {
+    public static ArrayList<Customer> cuzt;
     public static void StartList(ArrayList<Customer> Usuarios){
        cuzt = Usuarios;
     }
@@ -79,7 +79,7 @@ public class ManageList {
         return cuzt.get(index);
     }
     public static String[] ReturnsNameIndex(int ind){ //returns all strings on list[index] in an array of Strings
-        String[] Info = new String[9];
+        String[] Info = new String[10];
         Customer u = cuzt.get(ind);
         Info[0] = u.GetUsername();
         Info[1] = ConcatenateMOC(u.GetMOC());
@@ -90,6 +90,7 @@ public class ManageList {
         Info[6] = u.GetPriceChargedCurrency();
         Info[7] = u.GetPriceCharged();
         Info[8] = u.GetDetails();
+        Info[9] = u.GetCompletion();
         return Info;
     }
     public static int ReturnSize(){
@@ -166,6 +167,61 @@ public class ManageList {
         String temp = "";
         for(int i=0;i<moc.length;i++){
             temp = temp + moc[i] + ".";
+        }
+        return temp;
+    }
+    public static String ReturnsDateDay(String date){ //returns the date day in the format dd/mm/yyyy
+        String ret = "";
+        for(int i=0;i<date.length();i++){
+            if(date.charAt(i)=='.'){
+                break;
+            }else{
+                ret = ret + date.charAt(i);
+            }
+        }
+        return ret;
+    }
+    public static String ReturnsDateMonth(String date){ //return the date month in the format dd/mm/yyyy
+        String temp = "";
+        //finding the 1st "/" position
+        for(int i=0;i<date.length();i++){
+            if(date.charAt(i)=='/'){
+                //finding the 2nd "/" position
+                for(int j=i+1;j<date.length();j++){
+                    if(date.charAt(j)=='/'){
+                        break;
+                    }else{
+                        temp = temp+date.charAt(j);
+                    }
+                }
+                break;
+            }else{
+                
+            }
+        }
+        return temp;
+    }
+    public static String ReturnsDateYear(String date){
+        String temp = "";
+        //finding the 1st "/" position
+        for(int i=0;i<date.length();i++){
+            if(date.charAt(i)=='/'){
+                //finding the 2nd "/" position
+                for(int j=i+1;j<date.length();j++){
+                    if(date.charAt(j)=='/'){
+                        //saving everything after the second "/" up until the end of the string
+                        for(int k=j+1;k<date.length();k++){
+                            temp = temp+date.charAt(k);
+                        }
+                        break;
+                    }else{
+                        
+                    }
+                }
+                break;
+            }else{
+                
+            }
         }
         return temp;
     }

@@ -3,32 +3,54 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus;
+package my.tartarus.artists;
     import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import my.tartarus.customers.ManageCommissionerList;
 /**
  *
  * @author Soerakraven
  */
-public class ArchiveClient {
-    public static File logs = new File("logs.txt");
+public class ArchiveCustomer {
+    public static File logsartist = new File("logsartists.txt");
     
     public static void ArchiveCustomers(File logos){
-        logs = logos;
+        logsartist = logos;
     }
     
     public static void CreateFile(){
         try{
-            logs.createNewFile();
+            logsartist.createNewFile();
         }catch(Exception e){
             e.printStackTrace();
             System.out.println("CreateFile Failed\n");
         }
     }
-    public static void LoadData(){
-        String entrada1, entrada2, entrada3, entrada4, entrada5, entrada6, entrada7, entrada8, entrada9;
-        int lines = CountLines()/9;
+    public static void ReplaceFile(int index){
+        int cont = 0;
+        String[] thingstowrite = ManageCustomerList.ReturnsNameIndex(index);
         try{
-            FileReader fileReader = new FileReader(logs);
+            Path path = Paths.get("logsartists.txt");
+            List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+            for(int i = index*10;i<(index*10)+10;i++){
+                lines.set(i, thingstowrite[cont]);
+                cont++;
+            }
+            Files.write(path, lines, StandardCharsets.UTF_8);
+        }catch(Exception e){
+            e.printStackTrace();
+            System.out.printf("Not possible to replace entry!\n");
+        }
+    }
+    public static void LoadData(){
+        String entrada1, entrada2, entrada3, entrada4, entrada5, entrada6, entrada7, entrada8, entrada9, entrada10;
+        int lines = CountLines()/10;
+        try{
+            FileReader fileReader = new FileReader(logsartist);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             for(int i=0;i<lines;i++){
                 entrada1 = bufferedReader.readLine();
@@ -40,9 +62,10 @@ public class ArchiveClient {
                 entrada7 = bufferedReader.readLine();
                 entrada8 = bufferedReader.readLine();
                 entrada9 = bufferedReader.readLine();
-                String[] entradanew = ManageList.DismantleMOC(entrada2);
-                Customer us = new Customer(entrada1, entradanew, entrada3, entrada4, entrada5, entrada6, entrada7, entrada8, entrada9);
-                ManageList.AddCustomer(us);
+                entrada10 = bufferedReader.readLine();
+                String[] entradanew = ManageCustomerList.DismantleMOC(entrada2);
+                Customer us = new Customer(entrada1, entradanew, entrada3, entrada4, entrada5, entrada6, entrada7, entrada8, entrada9, entrada10);
+                ManageCustomerList.AddCustomer(us);
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -53,7 +76,7 @@ public class ArchiveClient {
         String line;
         int cont=0;
         try{
-            FileReader fileReader = new FileReader("logs.txt");
+            FileReader fileReader = new FileReader("logsartists.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             while(bufferedReader.readLine() != null){
                 cont++;
@@ -68,10 +91,10 @@ public class ArchiveClient {
         String[] linha;
         FileWriter writer;
         try{
-            writer = new FileWriter(logs, true);
+            writer = new FileWriter(logsartist, true);
             PrintWriter printer = new PrintWriter(writer);
-            linha = ManageList.ReturnsNameIndex(ManageList.ReturnSize()-1);
-            for(int i=0;i<9;i++){
+            linha = ManageCustomerList.ReturnsNameIndex(ManageCustomerList.ReturnSize()-1);
+            for(int i=0;i<10;i++){
                 printer.append(linha[i]+ "\n");
             }
             printer.close();

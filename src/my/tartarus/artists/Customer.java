@@ -1,4 +1,4 @@
-package my.tartarus;
+package my.tartarus.artists;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -20,11 +20,11 @@ public class Customer {
     private String PriceChargedCurrency;
     private String PriceCharged;
     private String Details;
-    
+    private String Completion;
     public Customer(){
         
     }
-    public Customer(String username, String[] MOC, String PreviousCommissioner, String DateOfCommission, String DateOfPayment, String NumberInvoice, String PriceChargedCurrency, String PriceCharged, String Details){
+    public Customer(String username, String[] MOC, String PreviousCommissioner, String DateOfCommission, String DateOfPayment, String NumberInvoice, String PriceChargedCurrency, String PriceCharged, String Details, String Completion){
         this.username = username;
         this.MOC = MOC;
         this.PreviousCommissioner = PreviousCommissioner;
@@ -34,6 +34,7 @@ public class Customer {
         this.PriceChargedCurrency = PriceChargedCurrency;
         this.PriceCharged = PriceCharged;
         this.Details = Details;
+        this.Completion = Completion;
     }
     public String GetUsername(){
         return this.username;
@@ -62,6 +63,9 @@ public class Customer {
     public String GetDetails(){
         return this.Details;
     }
+    public String GetCompletion(){
+        return this.Completion;
+    }
     public void SetUsername(String username){
         this.username = username;
     }
@@ -88,5 +92,8 @@ public class Customer {
     }
     public void SetDetails(String Details){
         this.Details = Details;
+    }
+    public void SetCompletion(String Completion){
+        this.Completion = Completion;
     }
 }

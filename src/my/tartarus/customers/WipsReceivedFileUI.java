@@ -3,25 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus.artists;
-    import my.tartarus.artists.MainUI;
+package my.tartarus.customers;
+
+import my.tartarus.artists.MainUI;
+    import java.io.File;
 /**
  *
  * @author Soerakraven
  */
-public class DetailsWindowUI extends javax.swing.JFrame {
-
+public class WipsReceivedFileUI extends javax.swing.JFrame {
+    private static WipsReceivedFileUI wrfui = new WipsReceivedFileUI();
     /**
-     * Creates new form DetailsWindowUI
+     * Creates new form WipsReceivedFileUI
      */
-    public DetailsWindowUI() {
+    public WipsReceivedFileUI() {
         initComponents();
     }
-    public String GetText(){
-        return DETAILS_TEXT.getText();
+    public File GetFile(){
+        return wrfui.WIPS_FILE_CHOOSER.getSelectedFile();
     }
-    public void SetText(String det){
-        this.DETAILS_TEXT.setText(det);
+    public javax.swing.JFileChooser ReturnsFileChooser(){
+        return this.WIPS_FILE_CHOOSER;
     }
 
     /**
@@ -33,38 +35,35 @@ public class DetailsWindowUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        DETAILS_TEXT = new javax.swing.JTextArea();
+        WIPS_FILE_CHOOSER = new javax.swing.JFileChooser();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        DETAILS_TEXT.setColumns(10);
-        DETAILS_TEXT.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        DETAILS_TEXT.setLineWrap(true);
-        DETAILS_TEXT.setRows(5);
-        DETAILS_TEXT.setMargin(new java.awt.Insets(5, 5, 5, 5));
-        DETAILS_TEXT.setMinimumSize(new java.awt.Dimension(0, 24));
-        DETAILS_TEXT.setName(""); // NOI18N
-        jScrollPane1.setViewportView(DETAILS_TEXT);
-        DETAILS_TEXT.getAccessibleContext().setAccessibleName("DETAILS_TEXT");
+        WIPS_FILE_CHOOSER.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WIPS_FILE_CHOOSERActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(WIPS_FILE_CHOOSER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(WIPS_FILE_CHOOSER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void WIPS_FILE_CHOOSERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WIPS_FILE_CHOOSERActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_WIPS_FILE_CHOOSERActionPerformed
 
     /**
      * @param args the command line arguments
@@ -83,26 +82,26 @@ public class DetailsWindowUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DetailsWindowUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WipsReceivedFileUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DetailsWindowUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WipsReceivedFileUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DetailsWindowUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WipsReceivedFileUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DetailsWindowUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WipsReceivedFileUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DetailsWindowUI().setVisible(true);
+                wrfui = MainUI.princ.Returnwrfui();
+                wrfui.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea DETAILS_TEXT;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JFileChooser WIPS_FILE_CHOOSER;
     // End of variables declaration//GEN-END:variables
 }

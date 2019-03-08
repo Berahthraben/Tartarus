@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/PrincipalUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/CreditsUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/DetailsWindowUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/Customer.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ComboBoxUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ShowUserDetailsUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ShowUserUI.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ManageList.java</file>
-            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/ArchiveClient.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ListCommissionsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ShowCustomerDetailsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/TOSUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ListCommissionsShowWipUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ShowCustomerEditUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ListCommissionsShowEditUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ManageCustomerList.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/Customer.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ManageCommissionerList.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ShowCustomerUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ListCommissionsShowUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ArchiveCustomer.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/Commissions.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/CreditsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/DetailsWindowUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/MainUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/CommissionerDetailsUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/ManageCommissionerArchive.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/customers/WipsReceivedFileUI.java</file>
+            <file>file:/C:/Users/Soerakraven/Documents/NetBeansProjects/Tartarus/src/my/tartarus/artists/ComboBoxUI.java</file>
         </group>
     </open-files>
 </project-private>

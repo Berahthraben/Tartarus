@@ -3,24 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.tartarus;
+package my.tartarus.artists;
+
+import my.tartarus.artists.Customer;
+import my.tartarus.artists.ManageCustomerList;
 
 /**
  *
  * @author Soerakraven
  */
-public class ShowUserUI extends javax.swing.JFrame {
+public class ShowCustomerUI extends javax.swing.JFrame {
     public static int index;
-    public static ShowUserDetailsUI SU2 = new ShowUserDetailsUI();
+    public static ShowCustomerDetailsUI SU2 = new ShowCustomerDetailsUI();
     /**
      * Creates new form ShowUserUI
      */
-    public ShowUserUI() {
+    public ShowCustomerUI() {
         initComponents();
     }
-    public static ShowUserDetailsUI GetSU2(){
+    public static ShowCustomerDetailsUI GetSU2(){
         return SU2;
         
+    }
+    public void CleansText(){
+        this.jTextArea1.setText("");
     }
     public void SetText(Customer cus, int indeqs, String date){
         index = indeqs;
@@ -36,6 +42,7 @@ public class ShowUserUI extends javax.swing.JFrame {
         this.jTextArea1.append("Invoice Number: " + cus.GetNumberInvoice() + "\n");
         this.jTextArea1.append("Price Charged: " + cus.GetPriceChargedCurrency() + " ");
         this.jTextArea1.append(cus.GetPriceCharged() + "\n");
+        this.jTextArea1.append("Commission complete: "+cus.GetCompletion());
     }
 
     /**
@@ -50,6 +57,7 @@ public class ShowUserUI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addComponentListener(new java.awt.event.ComponentAdapter() {
@@ -73,18 +81,28 @@ public class ShowUserUI extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jButton2.setText("Edit customer");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(70, 70, 70))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,7 +110,9 @@ public class ShowUserUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -102,7 +122,7 @@ public class ShowUserUI extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         SU2.setVisible(true);
         Customer temp = new Customer();
-        temp = ManageList.ReturnsCustomer(index);
+        temp = ManageCustomerList.ReturnsCustomer(index);
         SU2.SetText(temp.GetDetails());
         SU2.setTitle("Customer " + temp.GetUsername() + " details");
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -110,6 +130,14 @@ public class ShowUserUI extends javax.swing.JFrame {
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
     }//GEN-LAST:event_formComponentShown
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        ShowCustomerEditUI sd = new ShowCustomerEditUI();
+        Customer cus = ManageCustomerList.cuzt.get(index);
+        sd.setTitle("Now editing customer " + cus.GetUsername() + " " + cus.GetDateOfCommission());
+        sd.WritesCustomerInfo(index);
+        sd.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,26 +156,28 @@ public class ShowUserUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ShowUserUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShowCustomerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ShowUserUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShowCustomerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ShowUserUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShowCustomerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ShowUserUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShowCustomerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ShowUserUI().setVisible(true);
+                new ShowCustomerUI().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
