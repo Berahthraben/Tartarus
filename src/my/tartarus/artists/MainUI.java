@@ -34,7 +34,7 @@ import my.tartarus.customers.ManageCommissionerList;
 public class MainUI extends javax.swing.JFrame {
         public static MainUI princ = new MainUI();
         public DetailsWindowUI novo = new DetailsWindowUI();
-        public TOSUI tosui = new TOSUI();
+        public static TOSUI tosui = new TOSUI();
         public CommissionerDetailsUI Cduimain = new CommissionerDetailsUI();
         public WipsReceivedFileUI wrfui = new WipsReceivedFileUI();
         public java.awt.image.BufferedImage buf = null;
@@ -51,6 +51,7 @@ public class MainUI extends javax.swing.JFrame {
         ArchiveCustomer.LoadData();
         ManageCommissionerArchive.CreateFile();
         ManageCommissionerArchive.LoadData();
+        JOptionPane.showMessageDialog(new JFrame(), "Previous data successfully loaded!");
         initComponents();
     }
     public String SetRandomText(){
@@ -121,7 +122,7 @@ public class MainUI extends javax.swing.JFrame {
     public WipsReceivedFileUI Returnwrfui(){
         return wrfui;
     }
-    public void HideTosui(){
+    public static void HideTosui(){
         tosui.hide();
     }
     public void Hidecdui(){
@@ -1803,7 +1804,7 @@ public class MainUI extends javax.swing.JFrame {
             String[] entradas = new String[17];
             entradas[0] = COMMISSION_TITLE_TEXT.getText();
             entradas[1] = ARTIST_USERNAME_TEXT.getText();
-            if(entradas[1]=="Leave blank if unsure" || entradas[1]==""){
+            if(entradas[1].equals("Leave blank if unsure") || entradas[1].equals("")){
                 entradas[1]="N/D";
             }
             entradas[2] = tosui.GetTexto();
@@ -1966,6 +1967,12 @@ public class MainUI extends javax.swing.JFrame {
             }catch(Exception e){
                 e.printStackTrace();
                 System.out.printf("Something went wrong when reading WIP image\n");
+            }
+            try{
+                File wipimg = new File("wipimages/", "wip"+ entradas[0] + entradas[16] + ".jpg");
+                wipimg.createNewFile();
+            }catch(Exception e){
+                e.printStackTrace();
             }
             Commissions com = new Commissions(entradas[0], entradas[1], entradas[2], ArtistMOCTemp, entradas[3], entradas[4], 
             entradas[5], entradas[6], entradas[7], CharacterNamesTemp, entradas[8], entradas[9],

@@ -9,6 +9,8 @@ import javax.swing.*;
 import java.io.File;
 import java.awt.Desktop;
 import my.tartarus.artists.MainUI;
+import java.awt.image.*;
+import javax.imageio.ImageIO;
 /**
  *
  * @author Soerakraven
@@ -18,17 +20,22 @@ public class ListCommissionsShowUI extends javax.swing.JFrame {
     public static ListCommissionsShowWipUI LCSWUI = new ListCommissionsShowWipUI();
     public static ListCommissionsShowEditUI LCSEUI = new ListCommissionsShowEditUI();
     public static my.tartarus.artists.ShowCustomerDetailsUI SCDUI = new my.tartarus.artists.ShowCustomerDetailsUI();
+    public static ListCommissionsShowUI LCSUI = ListCommissionsUI.ReturnsLcsui();
     /**
      * Creates new form ListCommissionsShowUI
      */
     public ListCommissionsShowUI() {
         initComponents();
     }
-    
+    public static ListCommissionsShowUI ReturnsLcsui(){
+        return LCSUI;
+    }
     public static void HideLCSEUI(){
         LCSEUI.setVisible(false);
     }
-    
+    public void CleansText(){
+        this.jTextArea1.setText("");
+    }
     public void WriteCommission(int index){
         this.index = index;
         Commissions cm = ManageCommissionerList.comms.get(index);
@@ -159,12 +166,23 @@ public class ListCommissionsShowUI extends javax.swing.JFrame {
         cm = ManageCommissionerList.comms.get(index);
         String path = "wipimages/wip" + cm.GetCommissionTitle() + Integer.toString(index) + ".jpg";
         File f = new File(path);
+        java.awt.image.BufferedImage bf = null;
         try{
-            Desktop dt = Desktop.getDesktop();
-            dt.open(f);
-        }catch (Exception e){
+            bf = ImageIO.read(f);
+        }catch(Exception e){
             e.printStackTrace();
-            System.out.printf("Something went wrong when opening wip image!");
+            System.out.printf("Failed to show wip!");
+        }
+        if(bf == null){
+            JOptionPane.showMessageDialog(new JFrame(), "Either the image failed to load or there's none to be show!");
+        }else{
+            try{
+                Desktop dt = Desktop.getDesktop();
+                dt.open(f);
+            }catch (Exception e){
+                e.printStackTrace();
+                System.out.printf("Something went wrong when opening wip image!");
+            }
         }
         /*Commissions cm = new Commissions();
         cm = ManageCommissionerList.comms.get(index);

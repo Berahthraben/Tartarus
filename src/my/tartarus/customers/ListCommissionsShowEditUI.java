@@ -1481,6 +1481,8 @@ public class ListCommissionsShowEditUI extends javax.swing.JFrame {
             ManageCommissionerList.comms.set(index, com);
             ManageCommissionerArchive.ReplacesEntry(index);
             ManageCommissionerArchive.ReplacesImage(index);
+            ListCommissionsUI.ReturnsLcsui().CleansText();
+            ListCommissionsUI.ReturnsLcsui().WriteCommission(index);
             JOptionPane.showMessageDialog(new JFrame(), "Successfully replaced!");
         }
             

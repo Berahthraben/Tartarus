@@ -10,7 +10,7 @@ package my.tartarus.customers;
  * @author Soerakraven
  */
 public class ListCommissionsUI extends javax.swing.JFrame {
-
+    public static ListCommissionsShowUI lcsui = new ListCommissionsShowUI();
     /**
      * Creates new form ListCommissionsUI
      */
@@ -19,6 +19,9 @@ public class ListCommissionsUI extends javax.swing.JFrame {
     }
     public javax.swing.JComboBox ReturnsComboBox(){
         return this.jComboBox1;
+    }
+    public static ListCommissionsShowUI ReturnsLcsui(){
+        return lcsui;
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -90,7 +93,6 @@ public class ListCommissionsUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int index = this.jComboBox1.getSelectedIndex();
-        ListCommissionsShowUI lcsui = new ListCommissionsShowUI();
         Commissions com = ManageCommissionerList.comms.get(index);
         lcsui.setTitle("Commission " + com.GetCommissionTitle());
         lcsui.setVisible(true);

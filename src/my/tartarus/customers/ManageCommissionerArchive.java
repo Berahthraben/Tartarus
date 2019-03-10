@@ -21,6 +21,8 @@ import my.tartarus.artists.ManageCustomerList;
 import static my.tartarus.artists.ManageCustomerList.CountPoints;
 import my.tartarus.artists.*;
 import java.util.ArrayList;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,6 +37,7 @@ public class ManageCommissionerArchive {
     
     public static void CreateFile(){ //creates the file if it doesn't exist
         try{
+            new File("wipimages").mkdir();
             logscommissions.createNewFile();
         }catch(Exception e){
             e.printStackTrace();
@@ -45,6 +48,7 @@ public class ManageCommissionerArchive {
         String entrada1, entrada2, entrada3, entrada4, entrada5, entrada6, entrada7, entrada8, entrada9;
         String entrada10, entrada11, entrada12, entrada13, entrada14, entrada15, entrada16, entrada17, entrada18, entrada19;
         int lines = CountLines()/19;
+        logscommissions = new File("logscommission.txt");
         try{
             FileReader fileReader = new FileReader(logscommissions);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -119,7 +123,11 @@ public class ManageCommissionerArchive {
             PrintWriter printer = new PrintWriter(writer);
             linha = ManageCommissionerList.ReturnsCommissionerListInString(ManageCommissionerList.comms.size()-1);
             for(int i=0;i<19;i++){
-                printer.append(linha[i]+ "\n");
+                if(i==18){
+                    printer.append(linha[i]);
+                }else{
+                    printer.append(linha[i]+ "\n");
+                }
             }
             printer.close();
         }catch(Exception e){

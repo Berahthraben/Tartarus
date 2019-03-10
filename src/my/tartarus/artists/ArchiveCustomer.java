@@ -95,7 +95,11 @@ public class ArchiveCustomer {
             PrintWriter printer = new PrintWriter(writer);
             linha = ManageCustomerList.ReturnsNameIndex(ManageCustomerList.ReturnSize()-1);
             for(int i=0;i<10;i++){
-                printer.append(linha[i]+ "\n");
+                if(i==9){
+                    printer.append(linha[i]);
+                }else{
+                    printer.append(linha[i]+ "\n");
+                }
             }
             printer.close();
         }catch(Exception e){
