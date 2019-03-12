@@ -123,11 +123,7 @@ public class ManageCommissionerArchive {
             PrintWriter printer = new PrintWriter(writer);
             linha = ManageCommissionerList.ReturnsCommissionerListInString(ManageCommissionerList.comms.size()-1);
             for(int i=0;i<19;i++){
-                if(i==18){
-                    printer.append(linha[i]);
-                }else{
-                    printer.append(linha[i]+ "\n");
-                }
+               printer.append(linha[i]+ "\n");
             }
             printer.close();
         }catch(Exception e){
